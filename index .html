@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لینک سامانه‌های پرکاربرد ایران</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #000;
+            color: #ffd700;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffd700;
+        }
+        .category {
+            margin-top: 30px;
+        }
+        .category h2 {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .category ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+        .category li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            border: 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+        }
+        .category li img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #ffd700;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .check{
+            display: flex;
+    justify-content: space-between;
+    padding-left: 16%;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const categories = document.querySelectorAll(".category h2");
+            categories.forEach(category => {
+                category.addEventListener("click", function() {
+                    const ul = this.nextElementSibling;
+                    ul.style.display = ul.style.display === "none" ? "block" : "none";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>لینک سامانه‌های پرکاربرد ایران</h1>
+
+        <div class="category">
+            <h2>سامانه‌های مربوط به بیمه:</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/pngwing.com_ky5o.png" alt="insurance"> <a href="https://eservices.tamin.ir/view/#/main" target="_blank">تامین اجتماعی</a></li>
+                <li><img src="https://s8.uupload.ir/files/pngwing.com_ky5o.png" alt="insurance"> <a href="https://samt.tamin.ir" target="_blank">پرداخت حق بیمه آزاد</a></li>
+                <li><img src="https://s8.uupload.ir/files/pngwing.com_ky5o.png" alt="insurance"> <a href="http://www.sabasrm.ir" target="_blank">صندوق کارمندان و بازنشستگان دولت</a></li>
+                <li><img src="https://s8.uupload.ir/files/pngwing.com_ky5o.png" alt="insurance"> <a href="https://my.medu.ir" target="_blank">سامانه فرهنگیان</a></li>
+                <li><img src="https://s8.uupload.ir/files/pngwing.com_ky5o.png" alt="insurance"> <a href="https://saba.esata.ir" target="_blank">سامانه نظامیان</a></li>
+                <li><img src="https://s8.uupload.ir/files/pngwing.com_ky5o.png" alt="insurance"> <a href="https://insurance.ifsm.ir" target="_blank">بیمه ورزش</a></li>
+                <li><img src="https://s8.uupload.ir/files/pngwing.com_ky5o.png" alt="insurance"> <a href="https://csp.ihio.gov.ir/logon?returnurl=%2F" target="_blank">بیمه سلامت</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>سامانه‌های قضایی و ثبتی:</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/legal_t2an.png" alt="legal"> <a href="https://iehraz.adlirean.ir" target="_blank">احراز هویت ثنا</a></li>
+                <li><img src="https://s8.uupload.ir/files/legal_t2an.png" alt="legal"> <a href="https://my.ssaa.ir/portal" target="_blank">سامانه ثبت اسناد و املاک کشور</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>سامانه‌های وام ها:</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/loan_fne4.jpeg" alt="Loan"> <a href="saman.mrud.ir" target="_blank">وام مسکن</a></li>
+                <li><img src="https://s8.uupload.ir/files/loan_fne4.jpeg" alt="Loan"> <a href="https://ve.cbi.ir/" target="_blank">وام ازدواج بچه</a></li>
+                <li><img src="https://s8.uupload.ir/files/loan_fne4.jpeg" alt="Loan"> <a href="https://my.ssaa.ir/portal" target="_blank">سامانه ثبت اسناد و املاک کشور</a></li>
+                <li><img src="https://s8.uupload.ir/files/loan_fne4.jpeg" alt="Loan"> <a href="https://soha.emdad.ir/mis/emdad/r/900/login" target="_blank">وام کمیته امداد</a></li>
+                <li><img src="https://s8.uupload.ir/files/loan_fne4.jpeg" alt="Loan"> <a href="https://amlak.mrud.ir/" target="_blank">ثبت اجاره نامه رایگان برای وام مسکن باید مهاجرین و مستاجرین در این سامانه خانه خود را وارد کند تا بتوانند شامل وام مسکن بشوند و اول با حساب صاحب ملک وارد سامانه می‌شویم و اطلاعات را تکمیل می‌کنیم و در آخر با حساب مستاجر وارد می‌شویم و اطلاعات را تکمیل می‌کنیم هر دو باید با اکانت‌های خود وارد شوند و امضای خود را وارد کنند و مالک و مستاجر هر کدام یک شاهد برای خود داشته باشند</a></li>
+        </div>
+
+
+        <div class="category">
+            <h2>سامانه افتتاح غیر حضوری حساب</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://www.mresalat.ir/fa" target="_blank">ثبت نام انلاین و افتتاحیه حساب بانک رسالت به</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://top.ir/bankparsian/online-account-opening" target="_blank">افتتاح حساب انلاین بانک پارسان</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://www.qmb.ir/Index.aspx?page_=form&lang=1&sub=0&tempname=Pages&PageID=1302&isPopUp=False" target="_blank">افتتاح حساب بانک مهر ایران غیر حضوری</a></li>
+            </ul>
+        </div>
+
+
+        <div class="category">
+            <h2>سامانه های برای تایر ماشین</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/car_tire_yg8r.jpeg" alt="car tire"> <a href="https://kavirtire.ir/" target="_blank">سامانه کویر تایر</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_tire_yg8r.jpeg" alt="car tire"> <a href="https://kala.ntsw.ir/Home/Index" target="_blank">سامانه تخصیص تایر و روغن موتور</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_tire_yg8r.jpeg" alt="car tire"> <a href="https://barez.org/" target="_blank">سایت بارز</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_tire_yg8r.jpeg" alt="car tire"> <a href="https://www.yric.com/" target="_blank">سامانه یزد تایر</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_tire_yg8r.jpeg" alt="car tire"> <a href="https://farstyre.com/" target="_blank">فارس تایر</a></li>
+            </ul>
+        </div>
+
+
+        <div class="category">
+            <h2>ثبت ام فراوری های نفتی و سوخت</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/oil_processing_vpvj.jpeg" alt="Oil processing"> <a href="https://newtejaratasan.niopdc.ir/" target="_blank">ثبت ام فراوری های نفتی و سوخت</a></li>
+            </ul>
+        </div>
+
+
+        <div class="category">
+            <h2>سامانه های برای ثبت نام های دانشگاهی</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/university_l59f.png" alt="University"> <a href="https://www.sanjesh.org/" target="_blank">سایت سنجش برای </a></li>
+                <li><img src="https://s8.uupload.ir/files/university_l59f.png" alt="University"> <a href="https://edu.iau.ac.ir/" target="_blank">آموزشیار برای ازاد</a></li>
+                <li><img src="https://s8.uupload.ir/files/university_l59f.png" alt="University"> <a href="https://osreg.pnu.ac.ir/home/Default.htm" target="_blank">انتخاب واحد بای پیام نور</a></li>
+                <li><img src="https://s8.uupload.ir/files/university_l59f.png" alt="University"> <a href="https://www.sanjesh.org/fa-IR/sanjesh/4924/page/%D8%B3%D8%B1%D8%A7%D8%B3%D8%B1%DB%8C" target="_blank">ثبت نام کنکور سراسری در بخش سراسری اول ثبت نام کنیم بعد سریال بخریم
+عرض عکس 250 پیکسل باید باشه</a></li>
+
+            </ul>     
+        </div>
+
+        <div class="category">
+            <h2>دیگر سامانه ها</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://www.sejam.ir/" target="_blank">سجام برای کد بورسی و ....</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://sso.my.gov.ir/login" target="_blank">ثبت نام یارانه</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://salamat.gov.ir/" target="_blank">ثبت نام کارت واکسن</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://hemayat.mcls.gov.ir/" target="_blank">اعتراض به یارانه</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://masir.23055.ir/" target="_blank">برای طلاق</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://gnaf2.post.ir/certification#5/31.77/54.82" target="_blank">گواهی کد پستی</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://emt.medu.ir/" target="_blank">تایید مدرک تحصیلی</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://azmoon.portaltvto.com/estelam/estelam" target="_blank">استعلام مدرک فنی حرفه ای</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="http://kanoonnobat.ir/" target="_blank">نوبت دهی دفاتر کفالت</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://epolice.ir/" target="_blank">درگاه خدمات الکترونیک انتظامی</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://pada.medu.ir/#/main" target="_blank">دانش اموزی</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://my.medu.ir/login.html?1" target="_blank">والدین معلمین</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://my.medu.ir/" target="_blank">اموزش سنجش بدو ورود بخش والدین
+                    ابتدا ثبت فزند و اطلاعاتش و بعد سنجش نواموزان</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://dvprogram.state.gov/" target="_blank">موزش ثبت نام لاتاری</a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://www.sanjesh.org/fa-IR/sanjesh/1/page/%D8%B5%D9%81%D8%AD%D9%87-%D8%A7%D8%B5%D9%84%DB%8C" target="_blank">اموزش تکمیل ظرفیت دبیری </a></li>
+                <li><img src="https://s8.uupload.ir/files/administrative_system_zinj.png" alt="Administrative system"> <a href="https://newtejaratasan.niopdc.ir/" target="_blank">ثبت ام فراوری های نفتی</a></li>    
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>سامانه ثبت نام دستگاه کارتخان درگاه مستقیم</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/card_reader_y8qh.jpg" alt="Card reader"> <a href="https://www.behpardakht.com/resources/index.html#" target="_blank">به پرداخت ملت</a></li>
+                <li><img src="https://s8.uupload.ir/files/card_reader_y8qh.jpg" alt="Card reader"> <a href="https://sadadpsp.ir/" target="_blank">سداد</a></li>
+                <li><img src="https://s8.uupload.ir/files/card_reader_y8qh.jpg" alt="Card reader"> <a href="https://www.irankish.com/" target="_blank">ایران کیش</a></li>
+                <li><img src="https://s8.uupload.ir/files/card_reader_y8qh.jpg" alt="Card reader"> <a href="https://www.zarinpal.com/" target="_blank">زرین پال درکاه </a></li>
+                <li><img src="https://s8.uupload.ir/files/card_reader_y8qh.jpg" alt="Card reader"> <a href="https://www.pay.ir/" target="_blank">پی</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>سامانه های مجوز و پروانه کسب تمدید پروانه اشتغال</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/business_license_nsu.png" alt="Business license"> <a href="https://mojavez.ir/" target="_blank">ثبت نام پروانه کسب و مجوز صدور</a></li>
+                <li><img src="https://s8.uupload.ir/files/business_license_nsu.png" alt="Business license"> <a href="https://novin.iranianasnaf.ir/fa/" target="_blank">برای تمدید ان و تکمیل درخواست مشاغل صنفی</a></li>
+                <li><img src="https://s8.uupload.ir/files/business_license_nsu.png" alt="Business license"> <a href="https://utcms.ir/" target="_blank">سامانه ثبت نام پروانه اشتغال رانندگان</a></li>
+            </ul>   
+           
+             
+        </div>
+
+        <div class="category">
+            <h2>سامانه‌های مربوط به خودرو و نقل و انتقال:</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://ghabzino.com/" target="_blank">قبضینو</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://sakha.epolice.ir/portal/login" target="_blank">ساخا سامانه برای تخلف مالک خودرو و ........</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://serwis.ir/toll/login" target="_blank">مالیات نقل و انتقال خودرو</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://nobat.epolice.ir/" target="_blank">نوبت تعویض پلاک</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://esale.ikco.ir/#!/" target="_blank">ثبت نام خودرو ایران خودرو</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://saipa.iranecar.com/public/home" target="_blank">سامانه سایپا</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://bahman.iranecar.com/" target="_blank">سامانه بهمن موتور</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://sakha.epolice.ir/portal/login" target="_blank">سامانه خدمات فراجا</a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://prkar.mcls.gov.ir/Login" target="_blank">ثبت بیمه بیکاری و شکایت از کارفرما</a></li></a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://www.portaltvto.com/" target="_blank">سامانه فنی حرفه  ای برای ثبنت نام در اموزش و پرداخت </a></li>
+                <li><img src="https://s8.uupload.ir/files/car_ub9f.jpeg" alt="car"> <a href="https://esalecar.ir/" target="_blank"></a></li>
+            </ul>
+        </div>
+
+
+        <div class="category">
+            <h2>سامانه های طراحی</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/design_system_v3q0.png" alt="Design systems"> <a href="./index .html" target="_blank">کارت ویزیت تراکت اید در اینترنت سرچ کنیم و پیدا کنیم</a></li>
+                <li><img src="https://s8.uupload.ir/files/design_system_v3q0.png" alt="Design systems"> <a href="https://www.kanoon.ir/Public/ExamQuestions" target="_blank">پیدا کردن نمونه سوال کاربرگ</a></li>
+            </ul>
+        </div>
+
+
+        <div class="category">
+            <h2>سامانه های خرید بلیط</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/ticket_purchasing_1nrq.png" alt="Ticket purchasing"> <a href="https://www.alibaba.ir/" target="_blank">علی بابا</a></li>
+                <li><img src="https://s8.uupload.ir/files/ticket_purchasing_1nrq.png" alt="Ticket purchasing"> <a href="https://www.raja.ir/" target="_blank">رجا</a></li>
+                <li><img src="https://s8.uupload.ir/files/ticket_purchasing_1nrq.png" alt="Ticket purchasing"> <a href="https://footballeticket.ir/" target="_blank">خرید بلیط استادیم</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>خدمات مالی و مالیاتی:</h2>
+            <ul>
+                <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="https://sadadpsp.ir/tollpayment/" target="_blank">عوارض خروج از کشور</a></li>
+                <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="https://my.tax.gov.ir/" target="_blank">سامانه مالیات</a></li>
+                <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="https://my.tax.gov.ir/" target="_blank">اظهار نامه املاک مستغلات
+                    اول اظهار نامه ها منابع مالیاتی دوم قسمت مستقلات استیجاری و در اخر وارد سانانه میشود</a></li>
+                <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="https://www.evat. ir/" target="_blank">ارزش افزوده</a></li>
+                <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="https://my.tax.gov.ir/" target="_blank">اظهار نامه ارث قسمت اظهار نامه ها قسمت ارث 2 تا فرم هست فرم 26 قبل از 1 سال باشه ولی بعد از یک سال فرم 34</a></li>
+                <li class="check"><img src="./img/finance.png"  alt="finance"> <a href="https://vbank.banksepah.ir/" target="_blank">صیاد بانک سپه</a> 
+                <a href="https://ib.bki.ir/pid162.lmx" target="_blank">بانک کشاورزی</a> 
+                <a href="https://bankmellat.ir/check_register.aspx" target="_blank">بانک ملت</a>
+                 <a href="https://sayad.bmi.ir/" target="_blank">صیاد بانک ملی</a></li>
+                <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="https://my.tax.gov.ir/" target="_blank">اظهارنامه مالیات عملکرد مشاغل جدید وارد قسمت پرونده‌های مالیاتی می‌شویم
+                    و پرونده‌ای که می‌خواهد را روی گزینه ارسال اظهارنامه عملکرد و یا تبصره ماده ۱۰۰ می‌زنیم
+                    وارد سامانه که شدیم بر روی ثبت اظهارنامه و مشمول گروه را روی مشمول گروه سوم می‌گذاریم
+                    و حتماً تیک تبصره ۱۰۰ را بزنم
+                     و فرم تبصره صد برای کسانی هست که مبالغ واریزی به حابشون را قبول دارند و جمع کارتخوان مبالغ وارزی را  باید حساب کنیم
+                    اگرمبلغ واریزی به حسب تجاری  بالا بود فقط مبلغ گردش حسب یا فرم عای پر یکنیم
+                    اگر مبلغ یواریز به حساب تجاری کمتر از ۱۰ میلیون بود برای مشتری از تبصره ۱۰۰ استفاده کن اگر بیش از ۱۰ میلیون یا حالا ۲۰ میلیون بود از تبصره عادی استفاده کن
+                    و اگر دیدیم مبلغش بالاست براش فقط مبلغ کارت خوان و وارد می‌کنیم با فرم تبصره </a></li>
+                    <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="./index .html">فرق تبصره ۱۰۰ و اظهارنامه عادی 
+
+                        در اظهارنامه عادی تعیین مالیات به عهده اداره دارایی است
+                        
+                        ولی در تبصره ۱۰۰ ما با اداره  دارایی قرارداد می‌بندیم و همون چیزی که گفتن ما پرداخت می‌کنیم </a></li>
+                <li><img src="https://s8.uupload.ir/files/finance_r6qa.png" alt="finance"> <a href="https://cbi.ir/simplelist/19689.aspx" target="_blank">استعلام چک</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>فایل متنی کامل:</h2>
+
+            <ul>
+                <li><a target="_blank" href="./New Text Document (4).txt">فایل متنی کامل</a></li>
+            </ul>
+        </div>
+
+        <!-- More categories can be added similarly -->
+    </div>
+</body>
+</html>
